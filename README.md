@@ -24,3 +24,7 @@ Note that we are using the Adam optimizer, which is not the optimizer used in th
 - Test and add support for all Atari envs
 - Seperate single file into multiple modules to be imported into a main file
 - Experiment with different hyperparameters
+
+
+Citation:
+"Playing Atari with Deep Reinforcement Learning" by DeepMind. arXiv:1312.5602 [cs.LG]
