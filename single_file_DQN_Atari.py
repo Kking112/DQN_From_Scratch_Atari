@@ -205,8 +205,10 @@ def store_transition(replay_buffer:ReplayBuffer, state, action, reward, next_sta
 class DQN(nn.Module):
     def __init__(self, state_channels:int, num_actions:int, device:str='cuda') -> None:
         '''
-        state_channels:int = len(batch_size, channels, height, width)
-        num_actions:int = number of possible actions
+        Args:
+            state_channels:int = len(batch_size, channels, height, width)
+            num_actions:int = number of possible actions
+            device:str = device to run computations on ('cuda' or 'cpu')
         '''
         super(DQN,self).__init__()
         self.conv_layers = nn.Sequential(
